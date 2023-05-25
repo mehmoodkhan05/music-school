@@ -1,0 +1,8 @@
+.footer-section {
+    padding-top: 50px;
+}
+
+.footer-section .container {
+    border-top: 4px solid;
+    border-image:  linear-gradient(270deg, #343580 0%, #FBBC05 31.13%, #CD6C18 63.83%, #A42429 100%) 1;
+}

@@ -1,0 +1,7 @@
+.cards-section {
+    margin-top: -250px !important;
+}
+
+.card-image {
+    border-radius: 0 0 100px 100px;   
+}

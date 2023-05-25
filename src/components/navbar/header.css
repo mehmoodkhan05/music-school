@@ -1,0 +1,26 @@
+.navbar-section .navbar {
+    background: var(--bg-color) !important;
+}
+
+.navbar-section .navbar-logo {
+    width: 100px;
+}
+
+.navbar-section .navbar-icon {
+    color: var(--primary-blue);
+}
+
+.navbar-section .nav-items {
+    text-transform: uppercase;
+}
+
+.navbar-section .nav-link {
+    color: var(--body-color);
+}
+
+.navbar-section .nav-btn {
+    background: var(--primary-blue);
+    color: var(--white-color);
+    border-radius: 50px;
+    text-transform: uppercase;
+}
