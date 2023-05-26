@@ -18,6 +18,22 @@ body {
   --border-color: linear-gradient(270deg, #343580 0%, #FBBC05 31.13%, #CD6C18 63.83%, #A42429 100%);
 }
 
+.red {
+  color: var(--primary-red) !important;
+}
+
+.blue {
+  color: var(--primary-blue) !important;
+}
+
+.yellow {
+  color: var(--primary-yellow) !important;
+}
+
+.orange {
+  color: var(--secondary-color) !important;
+}
+
 .section-heading {
   font-weight: 700;
   font-size: 96px;
@@ -25,8 +41,9 @@ body {
 }
 
 .section-subHeading {
+  font-weight: 300;
   font-size: 62px;
-  line-height: 70px;
+  line-height: 50px;
 }
 
 .text-heading {
@@ -39,9 +56,13 @@ body {
   line-height: 23px;
 }
 
-.btn {
+.button {
   text-transform: uppercase;
   color: var(--white-color);
+}
+
+.btn-w-120 {
+  width: 120px;
 }
 
 .btn-w-180 {
@@ -50,4 +71,40 @@ body {
 
 .btn-w-216 {
   width: 216px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.lh-18 {
+  line-height: 35px;
+}
+
+.lh-30 {
+  line-height: 30px;
+}
+
+.fs-48 {
+  font-size: 48px;
+}
+
+.fs-62 {
+  font-size: 62px;
+}
+
+.fs-96 {
+  font-size: 96px;
 }

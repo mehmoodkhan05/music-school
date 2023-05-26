@@ -17,7 +17,6 @@
     object-fit: cover;
     object-position: ce top;
     z-index: -999;
-    filter: brightness(70%);
 }
 
 .hero-section .container {
@@ -29,7 +28,7 @@
 }
 
 .hero-section .hero-btn {
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .hero-section .hero-btn button {

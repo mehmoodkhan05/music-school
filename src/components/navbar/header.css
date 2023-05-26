@@ -20,7 +20,5 @@
 
 .navbar-section .nav-btn {
     background: var(--primary-blue);
-    color: var(--white-color);
     border-radius: 50px;
-    text-transform: uppercase;
 }

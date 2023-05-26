@@ -1,6 +1,7 @@
 import "./header.css"
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { MdPhone } from "react-icons/md";
+import config from "../../config"
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
                     <Container>
                         <Navbar.Brand href="#">
                             <img
-                                src="/src/assets/images/nav-logo.png"
+                                src={config.logo}
                                 className="navbar-logo"
                                 alt=""
                             />
@@ -34,7 +35,7 @@ const Header = () => {
                                     Contact Us
                                 </Nav.Link>
                                 <Nav.Link href="#" className="ms-4">
-                                    <Button variant="border-0" className="nav-btn btn-w-180">
+                                    <Button variant="border-0" className="nav-btn button btn-w-180">
                                         Login/Register
                                     </Button>
                                 </Nav.Link>

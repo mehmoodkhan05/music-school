@@ -1,0 +1,28 @@
+.musical-section {
+    padding-top: 250px;
+}
+
+.musical-section .text-heading {
+    color: var(--primary-blue);
+}
+
+/* CARDS */
+
+.card-items {
+    align-items: center;
+    width: 300px;
+    height: 100%;
+    padding: 80px 0 0 0;
+    border-radius: 25px;
+}
+
+.custom-class {
+    margin-top: 100px !important;
+    height: 355px;
+}
+
+.card-icons {
+    width: 75px;
+}
+
+/* CARDS */

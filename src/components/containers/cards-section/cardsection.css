@@ -1,7 +1,54 @@
 .cards-section {
-    margin-top: -250px !important;
+    margin-top: -225px !important;
 }
 
-.card-image {
-    border-radius: 0 0 100px 100px;   
+.cards-section .left-side {
+    padding-top: 230px;
 }
+
+.cards-section .left-side .heading .section-heading {
+    color: var(--secondary-color);
+}
+
+.cards-section .left-side .heading .section-subHeading {
+    color: var(--secondary-color);
+}
+
+.cards-section .left-side .card_section-btn {
+    background: transparent;
+    color: var(--body-color);
+    border: 4px solid var(--primary-yellow);
+    border-radius: 50px;
+}
+
+.cards-section .right-side .saxophone-image {
+    width: 250px;
+    filter: drop-shadow(5px 30px 30px rgba(0, 0, 0, 0.25));
+}
+
+.cards-section .right-side {
+    padding-top: 100px;
+    padding-left: 50px;
+    transform: rotate(-40deg);
+}
+
+/* CARD ITEMS */
+
+.card-image {
+    border-radius: 25px 25px 100px 100px;
+}
+
+.card-item {
+    border-radius: 25px;
+    width: 380px;
+}
+
+.card-butn {
+    color: var(--primary-blue) !important;
+}
+
+.card-title {
+    color: var(--primary-red) !important;
+}
+
+/* CARD ITEMS */
