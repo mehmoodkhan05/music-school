@@ -102,7 +102,7 @@ const FeaturesCard = () => {
                 <Slider {...settings} centerMode={true}>
                     {feature.map((featured) => {
                         return (
-                            <div className=" slick-next-content d-flex justify-content-center" key={featured.id}>
+                            <div className=" slick-next-content d-flex align-items-center justify-content-center" key={featured.id}>
                                 <Col lg={10}>
                                     <Card className="mt-5 h-100 feature-card">
                                         <Card.Img
