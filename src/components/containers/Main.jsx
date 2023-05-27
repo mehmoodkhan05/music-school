@@ -1,4 +1,4 @@
-import { Hero, CardSection, Musical, Contact, Features } from "./index";
+import { Hero, CardSection, Musical, Contact, Features, Reviews } from "./index";
 
 const Main = () => {
     return (
@@ -9,6 +9,7 @@ const Main = () => {
                 <Musical />
                 <Contact />
                 <Features />
+                <Reviews />
             </main>
         </>
     );

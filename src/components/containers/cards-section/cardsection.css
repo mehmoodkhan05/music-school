@@ -22,14 +22,10 @@
 }
 
 .cards-section .right-side .saxophone-image {
-    width: 250px;
+    width: 550px;
     filter: drop-shadow(5px 30px 30px rgba(0, 0, 0, 0.25));
-}
-
-.cards-section .right-side {
-    padding-top: 100px;
-    padding-left: 50px;
-    transform: rotate(-40deg);
+    padding-top: 180px;
+    transform: rotate(5deg);
 }
 
 /* CARD ITEMS */

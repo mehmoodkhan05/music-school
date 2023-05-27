@@ -9,6 +9,10 @@
     background-size: cover;
 }
 
+.slick-dots {
+    margin-top: 10px;
+}
+
 /* FEATURES CARDS */
 
 .feature-card {

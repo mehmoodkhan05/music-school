@@ -13,9 +13,9 @@ const MusicalCard = () => {
                             customClass = "custom-class py-5";
                         }
                         return (
-                            <Col lg={3} md={4} key={musical.id}>
+                            <Col xl={3} lg={4} sm={6} key={musical.id}>
                                 <Card
-                                    className={`border-0 mt-5 shadow-sm card-items ${customClass}`}
+                                    className={`border-0 mt-5 shadow-lg card-items ${customClass}`}
                                 >
                                     <Card.Img
                                         variant="top"
