@@ -9,11 +9,16 @@
     background-size: cover;
 }
 
+
+/* FEATURES CARDS */
 .slick-dots {
     margin-top: 10px;
 }
 
-/* FEATURES CARDS */
+.slick-list {
+    display: flex;
+    justify-content: center;
+}
 
 .feature-card {
     background: none;
@@ -35,5 +40,4 @@
     padding: 6px;
     border-radius: 25px;
 }
-
 /* FEATURES CARDS */

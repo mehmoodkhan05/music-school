@@ -22,3 +22,17 @@
     background: var(--primary-blue);
     border-radius: 50px;
 }
+
+.navbar-section .navbar-toggler {
+    border: none;
+}
+
+.navbar-section .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media screen and (width <=991px) {
+    .navbar-section .collapsed-navbar {
+        background: var(--white-color) !important;
+    }
+}

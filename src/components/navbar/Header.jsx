@@ -1,24 +1,37 @@
-import "./header.css"
+import "./header.css";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { MdPhone } from "react-icons/md";
-import config from "../../config"
+import config from "../../config";
+import { useState } from "react";
 
 const Header = () => {
+    const [collapsed, setCollapsed] = useState(false);
+
+    const handleToggle = () => {
+        setCollapsed(!collapsed);
+    };
+
     return (
         <>
             <header className="navbar-section">
-                <Navbar bg="transparent" expand="lg" fixed="top">
+                <Navbar
+                    expand="lg"
+                    fixed="top"
+                    className={collapsed ? "collapsed-navbar" : ""}
+                >
                     <Container>
                         <Navbar.Brand href="#">
-                            <img
-                                src={config.logo}
-                                className="navbar-logo"
-                                alt=""
-                            />
+                            <img src={config.logo} className="navbar-logo" alt="" />
                         </Navbar.Brand>
-                        <Navbar.Toggle aria-controls="navbarScroll" />
+                        <Navbar.Toggle
+                            aria-controls="navbarScroll"
+                            onClick={handleToggle}
+                        />
                         <Navbar.Collapse id="navbarScroll">
-                            <Nav className="ms-auto d-flex align-items-center nav-items" navbarScroll>
+                            <Nav
+                                className="ms-auto d-flex align-items-center nav-items"
+                                navbarScroll
+                            >
                                 <Nav.Link href="#" className="ms-4 nav-link">
                                     Home
                                 </Nav.Link>
@@ -35,7 +48,10 @@ const Header = () => {
                                     Contact Us
                                 </Nav.Link>
                                 <Nav.Link href="#" className="ms-4">
-                                    <Button variant="border-0" className="nav-btn button btn-w-180">
+                                    <Button
+                                        variant="border-0"
+                                        className="nav-btn button btn-w-180"
+                                    >
                                         Login/Register
                                     </Button>
                                 </Nav.Link>
@@ -52,4 +68,4 @@ const Header = () => {
     );
 };
 
-export default Header
+export default Header;

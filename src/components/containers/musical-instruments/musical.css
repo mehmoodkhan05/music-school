@@ -17,7 +17,7 @@
 }
 
 .custom-class {
-    margin-top: 100px !important;
+    margin-top: 30px !important;
     padding-top: 70px !important;
     height: 355px;
 }
@@ -27,3 +27,13 @@
 }
 
 /* CARDS */
+
+@media screen and (width <=991px) {
+    .musical-section {
+        padding-top: 150px;
+    }
+
+    .custom-class {
+        margin-top: 25px !important;
+    }
+}

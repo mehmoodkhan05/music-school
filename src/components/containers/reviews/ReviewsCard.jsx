@@ -6,104 +6,24 @@ import Slider from "react-slick";
 
 const ReviewsCard = () => {
     const settings = {
-        centerPadding: "0px",
-        dots: false,
+        className: "center",
+        centerMode: true,
         infinite: true,
+        centerPadding: "60px",
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                },
-            },
-
-            {
-                breakpoint: 555,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "85px",
-                },
-            },
-
-            {
-                breakpoint: 500,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "65px",
-                },
-            },
-
-            {
-                breakpoint: 485,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "55px",
-                },
-            },
-
-            {
-                breakpoint: 455,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "45px",
-                },
-            },
-
-            {
-                breakpoint: 425,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "30px",
-                },
-            },
-
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "20px",
-                },
-            },
-
-            {
-                breakpoint: 375,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "10px",
-                },
-            },
-
-            {
-                breakpoint: 320,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "0px",
-                },
-            },
-        ],
-    };
+        speed: 500
+      };
 
     return (
         <>
             <Row>
                 <div className="slick-slider">
-                    <Slider {...settings} centerMode={true}>
+                    <Slider {...settings}>
                         {review.map((reviews) => {
                             return (
                                 <div className="d-flex justify-content-center slick-next-content" key={reviews.id}>
-                                    <Col lg={10} md={12}>
+                                    <Col lg={10} md={12} className="d-flex">
                                         <Card className="mt-5 h-100 reviews-card">
                                             <Card.Body>
                                                 <div className="reviews-star text-center">
@@ -113,18 +33,18 @@ const ReviewsCard = () => {
                                                     <RiStarSFill className="stars" />
                                                     <RiStarSFill className="stars" />
                                                 </div>
-                                                <Card.Text className="review-desc pt-3 text-center">
+                                                <Card.Text className="review-desc pt-3 pt-lg-5 text-center">
                                                     {reviews.description}
                                                 </Card.Text>
                                             </Card.Body>
-                                            <Card.Footer className="text-center card-footer">
+                                            <Card.Footer className="text-center card-footer postition-relative">
                                                 <Card.Img
                                                     fluid="true"
                                                     variant="top"
                                                     src={reviews.image}
-                                                    className="review-image"
+                                                    className="review-image position-absolute"
                                                 />
-                                                <Card.Title className="mb-0 white">
+                                                <Card.Title className="mb-0 white pt-3">
                                                     {reviews.title}
                                                 </Card.Title>
                                                 <Card.Title className="white">

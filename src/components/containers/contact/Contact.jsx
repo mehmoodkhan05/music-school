@@ -10,7 +10,7 @@ const Contact = () => {
             <section className="contact-section">
                 <Container className="contact-container">
                     <Row>
-                        <Col lg={6}>
+                        <Col lg={6} md={12}>
                             <div className="headings">
                                 <p className="section-subHeading lh-30">Get in Touch</p>
                                 <p className="section-heading fs-62">With Us!</p>
@@ -25,7 +25,7 @@ const Contact = () => {
                                     <a href="#">(613) 730-2887</a>
                                 </p>
 
-                                <p>
+                                <p className="text-break">
                                     <a href="#">sunnysidemusicschool@gmail.com</a>
                                 </p>
                             </div>

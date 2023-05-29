@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: ce top;
+    object-position: top;
     z-index: -999;
 }
 
@@ -34,4 +34,19 @@
 .hero-section .hero-btn button {
     background: var(--primary-yellow);
     border-radius: 50px;
+}
+
+@media screen and (width <= 991px) {
+    .hero-section .section-heading {
+        font-size: 60px;
+        padding-top: 80px;
+    }   
+    
+    .hero-section .section-subHeading {
+        font-size: 35px;
+    }
+
+    .hero-section .hero-btn {
+        margin-top: 50px;
+    }
 }

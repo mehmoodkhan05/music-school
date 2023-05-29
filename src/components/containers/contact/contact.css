@@ -60,3 +60,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* FORM */
+
+@media screen and (width <= 991px) {
+    .contact-form {
+        margin-top: 50px;
+    }
+}

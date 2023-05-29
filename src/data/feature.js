@@ -18,14 +18,7 @@ let feature = [
         image: "/src/assets/features-cards/card-3.png",
         title: "Ross Davison",
         description: "professional saxophonist"
-    },
-
-    {
-        id: 3,
-        image: "/src/assets/features-cards/card-3.png",
-        title: "Ross Davison",
-        description: "professional saxophonist"
-    },    
+    },  
 ]
 
 export default feature

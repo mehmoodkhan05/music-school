@@ -10,14 +10,21 @@ const FeaturesCard = () => {
         dots: true,
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         arrows: false,
-        centerPadding: "0",
         responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 },
             },
@@ -99,12 +106,12 @@ const FeaturesCard = () => {
     return (
         <>
             <Row>
-                <Slider {...settings} centerMode={true}>
+                <Slider {...settings}>
                     {feature.map((featured) => {
                         return (
                             <div className=" slick-next-content d-flex align-items-center justify-content-center" key={featured.id}>
-                                <Col lg={10}>
-                                    <Card className="mt-5 h-100 feature-card">
+                                <Col xs={12}>
+                                    <Card className="border-0 mt-5 h-100 feature-card">
                                         <Card.Img
                                             fluid="true"
                                             variant="top"
