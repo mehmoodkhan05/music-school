@@ -50,12 +50,17 @@
 /* CARD ITEMS */
 
 @media screen and (width <=991px) {
-    .sound_card-third {
-        margin-top: 25px;
+    .lessons {
+        margin-top: 30px;
     }
 
     .cards-section .right-side .saxophone-image {
         padding-top: 120px;
     }
+}
 
+@media screen and (width <= 575px) {
+    .space {
+        margin-top: 15px;
+    }
 }

@@ -31,6 +31,12 @@
     box-shadow: none;
 }
 
+@media screen and (992px<= width <=1199px) {
+    .navbar-section .nav-items {
+        font-size: 14px;
+    }
+}
+
 @media screen and (width <=991px) {
     .navbar-section .collapsed-navbar {
         background: var(--white-color) !important;

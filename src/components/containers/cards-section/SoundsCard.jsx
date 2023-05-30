@@ -9,11 +9,13 @@ const SoundsCard = () => {
             <Row className="justify-content-center">
                 {clients.map((client) => {
                     let cardClass = "border-0 shadow-lg p-1 h-100 card-item";
-                    if (client.id === 3) {
-                      cardClass += " sound_card-third";
+                    if (client.id === 2) {
+                        cardClass += " space"
+                    }else if (client.id === 3) {
+                      cardClass += " lessons";
                     }
                     return (
-                        <Col lg={4} md={6} xs={12} key={client.id} className="d-flex">
+                        <Col lg={4} md={6} xs={12} key={client.id} className="d-flex justify-content-center">
                             <Card className={cardClass}>
                                 <Card.Img
                                     variant="top"

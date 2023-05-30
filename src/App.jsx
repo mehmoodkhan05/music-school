@@ -1,18 +1,35 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Header, Footer } from "./components/index";
 import Main from "./components/containers/Main";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { Services, Teachers } from "./pages/index"
 
 
 function App() {
   return (
     <>
-      <Header />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout />} exact >
+            <Route index element={<Main />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/teachers" element={<Teachers />} />
+          </Route>
+        </Routes>
+      </Router>
 
-      <Main />
-
-      <Footer />
     </>
   );
 }
 
 export default App;
+
+export const Layout = () => {
+  return (
+    <>
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  )
+}

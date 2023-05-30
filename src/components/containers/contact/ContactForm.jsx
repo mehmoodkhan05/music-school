@@ -20,7 +20,7 @@ const ContactForm = () => {
         <>
             <Form className="contact-form" noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row className="mb-2">
-                    <Form.Group as={Col} md="6" controlId="validationCustom01">
+                    <Form.Group as={Col} md="6" controlId="validationCustom01" className="mb-2 mb-md-0">
                         <Form.Control required type="text" placeholder="First name" className="p-3" />
                         <Form.Control.Feedback type="invalid">
                             Please provide a valid name.

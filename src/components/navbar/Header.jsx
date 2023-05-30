@@ -3,6 +3,7 @@ import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { MdPhone } from "react-icons/md";
 import config from "../../config";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -32,33 +33,33 @@ const Header = () => {
                                 className="ms-auto d-flex align-items-center nav-items"
                                 navbarScroll
                             >
-                                <Nav.Link href="#" className="ms-4 nav-link">
+                                <Link to="/" className="ms-4 nav-link">
                                     Home
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-4 nav-link">
+                                </Link>
+                                <Link to="/services" className="ms-4 nav-link">
                                     Services
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-4 nav-link">
+                                </Link>
+                                <Link to="/teachers" className="ms-4 nav-link">
                                     Teachers
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-4 nav-link">
+                                </Link>
+                                <Link to="#" className="ms-4 nav-link">
                                     News
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-4 nav-link">
+                                </Link>
+                                <Link to="#" className="ms-4 nav-link">
                                     Contact Us
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-4">
+                                </Link>
+                                <Link to="#" className="ms-4">
                                     <Button
                                         variant="border-0"
                                         className="nav-btn button btn-w-180"
                                     >
                                         Login/Register
                                     </Button>
-                                </Nav.Link>
-                                <Nav.Link href="#" className="ms-2 nav-link">
+                                </Link>
+                                <Link to="#" className="ms-2 nav-link">
                                     <MdPhone className="me-2 navbar-icon" />
                                     (404) 924-8584
-                                </Nav.Link>
+                                </Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

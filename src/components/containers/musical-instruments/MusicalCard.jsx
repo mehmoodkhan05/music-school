@@ -5,7 +5,7 @@ import "./musical.css";
 const MusicalCard = () => {
     return (
         <>
-            <Row>
+            <Row className="justify-content-center">
                 {musicals.map((musical) => {
                     let customClass = "";
                     if (musical.id === 1) {
@@ -26,7 +26,7 @@ const MusicalCard = () => {
                         customClass = "custom-class saxophone";
                     }
                     return (
-                        <Col xl={3} lg={4} sm={6} key={musical.id}>
+                        <Col xl={3} lg={4} sm={6} key={musical.id} className="d-flex justify-content-center">
                             <Card
                                 className={`border-0 mt-lg-5 shadow-lg card-items ${customClass}`}
                             >
