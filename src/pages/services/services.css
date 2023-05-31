@@ -29,7 +29,7 @@
 
 .services-page .button {
     background-color: var(--primary-red);
-    border: 4px solid rgba(164, 36, 41, 0.25);
+    border: 4px solid var(--primary-red);
     border-radius: 25px;
     box-shadow: 0px 0px 10px 6px rgba(170, 45, 50, 0.541);
 }
@@ -215,4 +215,263 @@
 
 .cancellation {
     padding-top: 180px;
+}
+
+@media screen and (width <=1399px) {
+    .overlay-containers .first-note::after {
+        width: 355px;
+    }
+
+    .overlay-containers .teach-harmony::after {
+        width: 355px;
+    }
+
+    .overlay-containers .future-sounds::after {
+        width: 355px;
+    }
+}
+
+@media screen and (width <=1199px) {
+
+    /* RED OVERLAY */
+    .overlay-containers .first-note::after {
+        width: 295px;
+    }
+
+    .overlay-containers .first-note {
+        padding: 25px 0 0 50px;
+    }
+
+    .overlay-containers .first-note .text-body {
+        padding-right: 297px;
+    }
+
+    /* BLUE OVERLAY */
+    .overlay-containers .teach-harmony::after {
+        width: 295px;
+    }
+
+    .overlay-containers .teach-harmony {
+        padding: 25px 0 0 50px;
+    }
+
+    .overlay-containers .teach-harmony .text-body {
+        padding-right: 218px;
+    }
+
+    /* ORANGE OVERLAY */
+    .overlay-containers .future-sounds::after {
+        width: 295px;
+    }
+
+    .overlay-containers .future-sounds {
+        padding: 25px 0 0 50px;
+    }
+
+    .overlay-containers .future-sounds .text-body {
+        padding-right: 102px;
+    }
+}
+
+@media screen and (width <=991px) {
+
+    /* RED OVERLAY */
+    .overlay-containers .first-note::after {
+        width: 210px;
+    }
+
+    .overlay-containers .first-note {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .first-note .text-body {
+        padding-right: 57px;
+    }
+
+    .overlay-containers .red-overlay .fs-60 {
+        font-size: 45px;
+    }
+
+    /* BLUE OVERLAY */
+    .overlay-containers .teach-harmony::after {
+        width: 210px;
+    }
+
+    .overlay-containers .teach-harmony {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .teach-harmony .text-body {
+        padding-right: 0;
+    }
+
+    .overlay-containers .blue-overlay .fs-60 {
+        font-size: 45px;
+    }
+
+    /* ORANGE OVERLAY */
+    .overlay-containers .future-sounds::after {
+        width: 210px;
+    }
+
+    .overlay-containers .future-sounds {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .future-sounds .text-body {
+        padding-right: 0;
+    }
+
+    .overlay-containers .orange-overlay .fs-60 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (width <=767px) {
+
+    /* RED OVERLAY */
+    .overlay-containers .first-note::after {
+        width: 150px;
+    }
+
+    .overlay-containers .first-note {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .first-note .text-body {
+        padding-right: 0;
+    }
+
+    .overlay-containers .red-overlay .fs-60 {
+        font-size: 35px;
+    }
+
+    .overlay-containers .red-overlay .lh-70 {
+        line-height: 40px;
+    }
+
+    /* BLUE OVERLAY */
+    .overlay-containers .teach-harmony::after {
+        width: 150px;
+    }
+
+    .overlay-containers .teach-harmony {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .teach-harmony .text-body {
+        padding-right: 0;
+    }
+
+    .overlay-containers .blue-overlay .fs-60 {
+        font-size: 35px;
+    }
+
+    .overlay-containers .blue-overlay .lh-70 {
+        line-height: 40px;
+    }
+
+    /* ORANGE OVERLAY */
+    .overlay-containers .future-sounds::after {
+        width: 150px;
+    }
+
+    .overlay-containers .future-sounds {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .future-sounds .text-body {
+        padding-right: 0;
+    }
+
+    .overlay-containers .orange-overlay .fs-60 {
+        font-size: 35px;
+    }
+
+    .overlay-containers .orange-overlay .lh-70 {
+        line-height: 40px;
+    }
+}
+
+@media screen and (width <=575px) {
+    .services-page .section-heading {
+        padding-top: 200px;
+        font-size: 60px;
+    }
+
+    .services-page .service-btn {
+        padding-top: 50px;
+    }
+
+    .services-page .btn-w-216 {
+        width: 180px;
+    }
+
+    .overlay-containers {
+        padding-top: 80px;
+    }
+
+    /* RED OVERLAY */
+    .overlay-containers .first-note::after {
+        width: 160px;
+    }
+
+    .overlay-containers .first-note {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .first-note .text-body {
+        padding-right: 0;
+        padding-top: 10px;
+        font-size: 12px;
+
+    }
+
+    .overlay-containers .red-overlay .fs-60 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    /* BLUE OVERLAY */
+    .overlay-containers .teach-harmony::after {
+        width: 160px;
+    }
+
+    .overlay-containers .teach-harmony {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .teach-harmony .text-body {
+        padding-right: 0;
+        font-size: 12px;
+
+    }
+
+    .overlay-containers .blue-overlay .fs-60 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+
+    /* ORANGE OVERLAY */
+    .overlay-containers .future-sounds::after {
+        width: 160px;
+    }
+
+    .overlay-containers .future-sounds {
+        padding: 0 0 0 50px;
+    }
+
+    .overlay-containers .future-sounds .text-body {
+        padding-right: 0;
+        font-size: 12px;
+
+    }
+
+    .overlay-containers .orange-overlay .fs-60 {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
 }

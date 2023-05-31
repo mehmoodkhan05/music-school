@@ -1,5 +1,5 @@
 .navbar-section .navbar {
-    background: var(--bg-color) !important;
+    background: var(--bg-color);
 }
 
 .navbar-section .navbar-logo {

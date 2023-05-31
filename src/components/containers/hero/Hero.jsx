@@ -21,7 +21,7 @@ const Hero = () => {
                     </div>
 
                     <div className="hero-btn text-center">
-                        <Button variant="" className="button btn-w-216 p-2">Sign up Today!</Button>
+                        <Button variant="" className="button btn-w-216">Sign up Today!</Button>
                     </div>
                 </Container>
             </section>

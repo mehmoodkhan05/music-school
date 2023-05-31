@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sunnyside Music School</title>
 
+  <!-- OWL CAROUSEL CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- OWL CAROUSEL CSS -->
+
   <!-- SLICK SLIDER -->
   <link rel="stylesheet" type="text/css" charset="UTF-8"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
@@ -25,18 +31,56 @@
   <!-- BOOTSTRAP -->
 
   <!-- JQUERY -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
   <!-- JQUERY -->
 
+  <!-- OWL CAROUSEL JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- OWL CAROUSEL JS -->
+
   <script>
-    $(window).on("scroll", function () {
-      if ($(window).scrollTop() > 0) {
-        $(".navbar").addClass("bg-dark");
-      } else {
-        $(".navbar").removeClass("bg-dark", "text-white");
-      }
+    $(document).ready(function () {
+      var owl = $('.owl-carousel').owlCarousel({
+        stagePadding: 200,
+        loop: true,
+        margin: 10,
+        items: 1,
+        lazyLoad: true,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+            stagePadding: 60
+          },
+          600: {
+            items: 1,
+            stagePadding: 100
+          },
+          1000: {
+            items: 1,
+            stagePadding: 200
+          },
+          1200: {
+            items: 1,
+            stagePadding: 250
+          },
+          1400: {
+            items: 1,
+            stagePadding: 300
+          },
+          1600: {
+            items: 1,
+            stagePadding: 350
+          },
+          1800: {
+            items: 1,
+            stagePadding: 400
+          }
+        }
+      })
     });
   </script>
 </body>

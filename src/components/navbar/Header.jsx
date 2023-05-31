@@ -2,15 +2,31 @@ import "./header.css";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { MdPhone } from "react-icons/md";
 import config from "../../config";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     const [collapsed, setCollapsed] = useState(false);
+    const [navbarBg, setNavbarBg] = useState(false);
 
     const handleToggle = () => {
         setCollapsed(!collapsed);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 822) {
+                setNavbarBg(true);
+            } else {
+                setNavbarBg(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <>
@@ -18,7 +34,7 @@ const Header = () => {
                 <Navbar
                     expand="lg"
                     fixed="top"
-                    className={collapsed ? "collapsed-navbar" : ""}
+                    className={`${collapsed ? "collapsed-navbar" : ""} ${navbarBg ? "bg-white" : ""}`}
                 >
                     <Container>
                         <Navbar.Brand href="#">
@@ -42,13 +58,13 @@ const Header = () => {
                                 <Link to="/teachers" className="ms-4 nav-link">
                                     Teachers
                                 </Link>
-                                <Link to="#" className="ms-4 nav-link">
+                                <Link to="/news" className="ms-4 nav-link">
                                     News
                                 </Link>
-                                <Link to="#" className="ms-4 nav-link">
+                                <Link to="/contactUs" className="ms-4 nav-link">
                                     Contact Us
                                 </Link>
-                                <Link to="#" className="ms-4">
+                                <Link to="/login" className="ms-4">
                                     <Button
                                         variant="border-0"
                                         className="nav-btn button btn-w-180"

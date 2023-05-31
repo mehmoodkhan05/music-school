@@ -81,6 +81,10 @@ body {
   width: 216px;
 }
 
+.rd-50 {
+  border-radius: 50px;
+}
+
 .fw-300 {
   font-weight: 300;
 }
