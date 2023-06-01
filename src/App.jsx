@@ -7,7 +7,14 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import { ContactUs, News, Services, Teachers } from "./pages/index";
+import {
+  ContactUs,
+  Login,
+  News,
+  Registration,
+  Services,
+  Teachers,
+} from "./pages/index";
 
 function App() {
   return (
@@ -20,6 +27,8 @@ function App() {
             <Route path="/teachers" element={<Teachers />} />
             <Route path="/news" element={<News />} />
             <Route path="/contactUs" element={<ContactUs />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signUp" element={<Registration />} />
           </Route>
         </Routes>
       </Router>

@@ -1,17 +1,21 @@
-import { Row } from "react-bootstrap"
-// import "./reviews.css"
-// import review from "../../../data/review"
-// import { RiStarSFill } from "react-icons/ri";
+import { Card, Col, Row } from "react-bootstrap"
+import "./reviews.css"
+import review from "../../../data/review"
+import { RiStarSFill } from "react-icons/ri";
 
 const ReviewsCard = () => {
     return (
         <>
             <Row>
-                {/* <div className="owl-carousel owl-theme">
+                <div id="customers-reviews" className="owl-carousel">
                     {review.map((reviews) => {
                         return (
                             <div className="item" key={reviews.id}>
                                 <Col xs={12}>
+                                    {/* <div className="shadow-effect">
+                                        <img className="img-circle" src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg" alt="" />
+                                        <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+                                    </div> */}
                                     <Card className="mt-5 h-100 reviews-card">
                                         <Card.Body>
                                             <div className="reviews-star text-center">
@@ -21,18 +25,18 @@ const ReviewsCard = () => {
                                                 <RiStarSFill className="stars" />
                                                 <RiStarSFill className="stars" />
                                             </div>
-                                            <Card.Text className="review-desc pt-3 pt-lg-5 text-center">
+                                            <Card.Text className="review-desc pt-3 pt-lg-4 text-center">
                                                 {reviews.description}
                                             </Card.Text>
                                         </Card.Body>
-                                        <Card.Footer className="text-center card-footer postition-relative">
+                                        <Card.Footer className="text-center card-footer">
                                             <Card.Img
                                                 fluid="true"
                                                 variant="top"
                                                 src={reviews.image}
-                                                className="review-image position-absolute"
+                                                className="review-image"
                                             />
-                                            <Card.Title className="mb-0 white pt-3">
+                                            <Card.Title className="mb-0 white">
                                                 {reviews.title}
                                             </Card.Title>
                                             <Card.Title className="white">
@@ -44,100 +48,8 @@ const ReviewsCard = () => {
                             </div>
                         )
                     })}
-                </div> */}
-
-                <div className="owl-carousel">
-                    <div className="item">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">1 test</a>
-                                <div className="textsb"> test    </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">2 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">3 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">4 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">5 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">6 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">7 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">8 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">9 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">10 test</a>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="item black">
-                        <a href="#">
-                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />
-                            <div className="inner">
-                                <a href="#">11 test</a>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </Row>
+                </div >
+            </Row >
         </>
     )
 }

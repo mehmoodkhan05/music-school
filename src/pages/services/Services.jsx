@@ -1,8 +1,13 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import "./services.css";
 import service from "../../data/service";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="services-page">
@@ -90,7 +95,7 @@ const Services = () => {
               {service.map((services) => {
                 let customClass = "";
                 if (services.id === 2) {
-                    customClass = "mt-4 mt-sm-0"
+                  customClass = "mt-4 mt-sm-0"
                 }
                 return (
                   <Col xl={3} lg={4} md={5} sm={6} xs={9} key={services.id}>

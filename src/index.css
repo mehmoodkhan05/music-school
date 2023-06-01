@@ -15,6 +15,7 @@ body {
   --black-color: #000;
   --white-color: #fff;
   --bg-color: #ffffffcf;
+  --news-bg: #EFEFEF;
   --border-color: linear-gradient(270deg, #343580 0%, #FBBC05 31.13%, #CD6C18 63.83%, #A42429 100%);
 }
 
@@ -102,7 +103,7 @@ body {
 }
 
 .lh-18 {
-  line-height: 35px;
+  line-height: 18px;
 }
 
 .lh-20 {
@@ -122,7 +123,11 @@ body {
 }
 
 .fs-24 {
-  font-style: 24px;
+  font-size: 24px;
+}
+
+.fs-34 {
+  font-size: 34px;
 }
 
 .fs-48 {

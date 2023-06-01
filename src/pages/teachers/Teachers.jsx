@@ -1,7 +1,12 @@
 import { Button, Container } from "react-bootstrap"
 import "./teachers.css"
+import { useEffect } from "react";
 
 const Teachers = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className="teachers-page">

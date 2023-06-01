@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/" />
+  <link rel="icon" type="image/svg+xml" href="#" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sunnyside Music School</title>
 
@@ -42,45 +42,30 @@
   <!-- OWL CAROUSEL JS -->
 
   <script>
-    $(document).ready(function () {
-      var owl = $('.owl-carousel').owlCarousel({
-        stagePadding: 200,
+    jQuery(document).ready(function ($) {
+      "use strict";
+      $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
-        items: 1,
-        lazyLoad: true,
+        center: true,
+        items: 3,
+        margin: 0,
+        autoplay: true,
+        dots: false,
         nav: true,
+        autoplayTimeout: 8500,
+        smartSpeed: 450,
         responsive: {
           0: {
-            items: 1,
-            stagePadding: 60
+            items: 1
           },
-          600: {
-            items: 1,
-            stagePadding: 100
+          768: {
+            items: 2
           },
-          1000: {
-            items: 1,
-            stagePadding: 200
-          },
-          1200: {
-            items: 1,
-            stagePadding: 250
-          },
-          1400: {
-            items: 1,
-            stagePadding: 300
-          },
-          1600: {
-            items: 1,
-            stagePadding: 350
-          },
-          1800: {
-            items: 1,
-            stagePadding: 400
+          1170: {
+            items: 3
           }
         }
-      })
+      });
     });
   </script>
 </body>

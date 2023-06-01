@@ -15,7 +15,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 822) {
+            if (window.scrollY > 823) {
                 setNavbarBg(true);
             } else {
                 setNavbarBg(false);

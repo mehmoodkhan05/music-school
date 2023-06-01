@@ -1,7 +1,12 @@
 import { Button, Container } from "react-bootstrap";
 import "./hero.css";
+import { useEffect } from "react";
 
 const Hero = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <section className="hero-section">
