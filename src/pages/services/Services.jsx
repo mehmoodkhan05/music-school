@@ -95,7 +95,7 @@ const Services = () => {
               {service.map((services) => {
                 let customClass = "";
                 if (services.id === 2) {
-                  customClass = "mt-4 mt-sm-0"
+                  customClass = "mt-4 mt-sm-0";
                 }
                 return (
                   <Col xl={3} lg={4} md={5} sm={6} xs={9} key={services.id}>
@@ -143,7 +143,7 @@ const Services = () => {
             <Col xs={12}>
               <div className="bottom-content">
                 <p className="fw-300 fs-60 lh-70 text-center white">
-                  Nee a Rehearsal Space?
+                  Need a Rehearsal Space?
                 </p>
 
                 <p className="fs-24 lh-20 text-center white pt-2">
@@ -172,10 +172,11 @@ const Services = () => {
               </p>
 
               <p className="text-center">
-                Private lessons (and makeup lessons) cancelled by the student can be
-                made up provided that a minimum of 7 days notice is received by the
-                instructor or school. If a makeup lesson cannot be scheduled at a
-                mutually convenient time, a credit is issued for that lesson.)
+                Private lessons (and makeup lessons) cancelled by the student
+                can be made up provided that a minimum of 7 days notice is
+                received by the instructor or school. If a makeup lesson cannot
+                be scheduled at a mutually convenient time, a credit is issued
+                for that lesson.
               </p>
             </div>
           </Col>
