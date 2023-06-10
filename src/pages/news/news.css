@@ -36,3 +36,9 @@
 .news-containers .bg-color {
     background: var(--news-bg);
 }
+
+.news-containers .message-side img {
+    width: 60px;
+    padding: 10px;
+    border-radius: 50px;
+}
