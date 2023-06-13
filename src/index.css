@@ -114,6 +114,10 @@ body {
   line-height: 30px;
 }
 
+.lh-35 {
+  line-height: 35px;
+}
+
 .lh-50 {
   line-height: 50px;
 }
@@ -128,6 +132,10 @@ body {
 
 .fs-14 {
   font-size: 14px;
+}
+
+.fs-20 {
+  font-size: 20px;
 }
 
 .fs-24 {
