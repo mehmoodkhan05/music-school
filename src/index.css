@@ -61,6 +61,12 @@ body {
   line-height: 23px;
 }
 
+.reg-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
 .button {
   text-transform: uppercase;
   color: var(--white-color);
@@ -128,6 +134,10 @@ body {
 
 .fs-10 {
   font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
 }
 
 .fs-14 {

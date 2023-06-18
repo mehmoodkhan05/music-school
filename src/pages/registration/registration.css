@@ -1,0 +1,15 @@
+.registration-page {
+    padding-top: 200px;
+}
+
+.registration-page .create_login-form .user_reg-form input {
+    opacity: 0.5;
+}
+
+.registration-page .create_login-form .user_reg-form input:focus {
+    box-shadow: none;
+}
+
+.registration-page .create_login-form .user_reg-form input::placeholder {
+    padding-left: 20px;
+}
