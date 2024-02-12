@@ -19,10 +19,6 @@
     z-index: -999;
 }
 
-.hero-section .container {
-    filter: brightness();
-}
-
 .hero-section .section-heading {
     padding-top: 150px;
 }
